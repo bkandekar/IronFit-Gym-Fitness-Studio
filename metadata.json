@@ -1,0 +1,6 @@
+{
+  "name": "IronFit Gym & Fitness Studio",
+  "description": "IronFit Gym & Fitness Studio in Kothrud, Pune - Strength. Discipline. Results. Premier fitness club with custom cost estimator and trial booking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
