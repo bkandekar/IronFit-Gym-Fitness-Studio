@@ -733,5 +733,29 @@ document.addEventListener('DOMContentLoaded', function() {
         btnGenerateRoutine.addEventListener('click', generateRoutine);
         generateRoutine(); // Initial render
     }
+
+    // ----------------------------------------------------------------------
+    // 16. FAQ ACCORDION TOGGLE
+    // ----------------------------------------------------------------------
+    const faqBtns = document.querySelectorAll('.faq-question-btn');
+    faqBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const faqItem = btn.closest('.faq-item');
+            if (!faqItem) return;
+
+            const isActive = faqItem.classList.contains('active');
+
+            // Close other items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Toggle current item
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        });
+    });
 });
+
 

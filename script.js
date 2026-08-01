@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const mainNav = document.getElementById('mainNav');
 
     let currentCalculatedMin = 2500;
-    let currentCalculatedMax = 2875;
+    let currentCalculatedMax = 3200;
 
     // ----------------------------------------------------------------------
     // 3. ESTIMATOR CALCULATOR LOGIC
